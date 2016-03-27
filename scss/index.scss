@@ -10,6 +10,16 @@ body {
 
 }
 
+.client {
+	display: none;
+}
+
+@media only screen {
+	.client {
+		display: block;
+	}
+}
+
 .client, .counselor, .alt, .ms, .pa, .ca {
 	margin-left: 125px;
 	border-left: 1px solid gray;

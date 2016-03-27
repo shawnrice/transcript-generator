@@ -22,7 +22,12 @@ _Another Note: Do not use Microsoft Word to write the files. They must be writte
 There is very little error checking.
 
 ## Pre-install Instructions
-Open a terminal (/Applications)
+Open a terminal (`/Applications/Utilities/Terminal`)
+
+Type or copy/paste the following commands:
+    * `xcode-select --install` ([More information](http://osxdaily.com/2014/02/12/install-command-line-tools-mac-os-x/))
+    * `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"` ([More information](http://brew.sh/))
+    * `brew install node` (This installs [`nodejs`](https://nodejs.org/en/))
 
 ## Install Instructions
 
