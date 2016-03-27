@@ -1,7 +1,7 @@
 body {
 	padding: 0;
 	font-size: '11pt';
-	width: 76%;
+	width: 95%;
 	margin: 4em auto;
 	font: 15px / 1.5 Calibri, Arial, sans-serif;
 }
@@ -11,7 +11,9 @@ body {
 }
 
 @media print {
-
+	body {
+		font: 12px / 1.5 Calibri, Arial, sans-serif;
+	}
 }
 
 .counselor-name {
@@ -34,18 +36,20 @@ body {
 .client, .counselor, .alt, .ms, .pa, .ca, .analysis {
 	border-left: 1px solid gray;
 	margin-bottom: 2em;
-	margin-left: 145px;
+	margin-left: 100px;
 	padding-left: 1em;
 
 	&:before {
 		font-size: .75em;
 		font-variant: small-caps;
 		font-weight: 600;
-		margin-left: calc( -145px - 1em );
+		margin-left: calc( -100px );
 		margin-top: .25em;
 		padding-left: 0;
 		position: absolute;
 		text-transform: uppercase;
+		width: 90px;
+		word-wrap: normal;
 	}
 }
 
@@ -62,7 +66,7 @@ body {
 }
 
 .alt:before {
-	content: 'Alternate Intervention';
+	content: 'Alternative Intervention';
 }
 .client:before {
 	content: 'Client';
