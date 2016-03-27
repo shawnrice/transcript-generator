@@ -10,30 +10,42 @@ body {
 
 }
 
-.client {
-	display: none;
+@media print {
+
 }
 
-@media only screen {
-	.client {
-		display: block;
-	}
+.counselor-name {
+	text-align: right;
+}
+
+.client-name {
+	display: inline;
+}
+
+.date {
+	display: inline;
+}
+
+.session-header-title {
+	text-align: center;
+	font: 600 1.2em / 2  Calibri, Arial, sans-serif;
 }
 
 .client, .counselor, .alt, .ms, .pa, .ca {
-	margin-left: 125px;
 	border-left: 1px solid gray;
-	padding-left: 1em;
 	margin-bottom: 2em;
+	margin-left: 125px;
+	padding-left: 1em;
+
 	&:before {
-		font-variant: small-caps;
-		text-transform: uppercase;
-		font-weight: 600;
 		font-size: .75em;
-		margin-top: .25em;
-		position: absolute;
+		font-variant: small-caps;
+		font-weight: 600;
 		margin-left: calc( -130px - 1em );
+		margin-top: .25em;
 		padding-left: 0;
+		position: absolute;
+		text-transform: uppercase;
 	}
 }
 
@@ -61,6 +73,7 @@ body {
 
 .analysis {
 	margin-left: 100px;
+
 	&:before {
 		content: 'Analysis';
 		margin-left: -100px;

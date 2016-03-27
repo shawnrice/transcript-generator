@@ -99,7 +99,12 @@ var sessionHeader = function( tags ) {
 
   client = client.join( ' ' );
 
-  return `<div class="client-name">Client Name: ${client}</div>`;
+  return `
+<div class="counselor-name">${config.name}</div>
+<div class="session-header-title">
+  <div class="client-name">${client} — </div>
+  <div class="date">${formatDate( tags.date )} | ${tags.time}</div>
+</div>`.trim();
 }
 
 var processFile = function( content, name ) {
@@ -111,7 +116,6 @@ var processFile = function( content, name ) {
     path.join( 'output', 'session--' + name + '.html' ),
     require('./partials/header.js')({ title: 'Session' }, config ) +
       sessionHeader( tags ) +
-      '<div class="date">' + formatDate( tags.date ) + ' | ' + tags.time + '</div>' +
       content +
       require('./partials/footer.js')(),
     function( err ) {
