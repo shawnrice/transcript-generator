@@ -1,0 +1,61 @@
+body {
+	padding: 0;
+	font-size: '11pt';
+	width: 76%;
+	margin: 4em auto;
+	font: 15px / 1.5 Calibri, Arial, sans-serif;
+}
+
+.header {
+
+}
+
+.client, .counselor, .alt, .ms, .pa, .ca {
+	margin-left: 125px;
+	border-left: 1px solid gray;
+	padding-left: 1em;
+	margin-bottom: 2em;
+	&:before {
+		font-variant: small-caps;
+		text-transform: uppercase;
+		font-weight: 600;
+		font-size: .75em;
+		margin-top: .25em;
+		position: absolute;
+		margin-left: calc( -130px - 1em );
+		padding-left: 0;
+	}
+}
+
+.ms:before {
+	content: 'Microskill';
+}
+
+.ca:before {
+	content: 'Counselor Analysis';
+}
+
+.pa:before {
+	content: 'Client Analysis';
+}
+
+.alt:before {
+	content: 'Alternate Explanation';
+}
+.client:before {
+	content: 'Client';
+}
+.counselor:before {
+	content: 'Counselor';
+}
+
+.analysis {
+	margin-left: 100px;
+	&:before {
+		content: 'Analysis';
+		margin-left: -100px;
+		font-size: 1.5em;
+		font-weight: 600;
+		position: absolute;
+	}
+}

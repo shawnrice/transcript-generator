@@ -1,0 +1,16 @@
+{
+  "name": "transcript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Shawn Patrick Rice <rice@shawnrice.org> (http://shawnrice.org)",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "marked": "^0.3.5",
+    "node-sass": "^3.4.2"
+  }
+}
