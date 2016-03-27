@@ -25,9 +25,9 @@ There is very little error checking.
 Open a terminal (`/Applications/Utilities/Terminal`)
 
 Type or copy/paste the following commands:
-    * `xcode-select --install` ([More information](http://osxdaily.com/2014/02/12/install-command-line-tools-mac-os-x/))
-    * `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"` ([More information](http://brew.sh/))
-    * `brew install node` (This installs [`nodejs`](https://nodejs.org/en/))
+* `xcode-select --install` ([More information](http://osxdaily.com/2014/02/12/install-command-line-tools-mac-os-x/))
+* `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"` ([More information](http://brew.sh/))
+* `brew install node` (This installs [`nodejs`](https://nodejs.org/en/))
 
 ## Install Instructions
 
