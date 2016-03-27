@@ -31,17 +31,17 @@ body {
 	font: 600 1.2em / 2  Calibri, Arial, sans-serif;
 }
 
-.client, .counselor, .alt, .ms, .pa, .ca {
+.client, .counselor, .alt, .ms, .pa, .ca, .analysis {
 	border-left: 1px solid gray;
 	margin-bottom: 2em;
-	margin-left: 125px;
+	margin-left: 145px;
 	padding-left: 1em;
 
 	&:before {
 		font-size: .75em;
 		font-variant: small-caps;
 		font-weight: 600;
-		margin-left: calc( -130px - 1em );
+		margin-left: calc( -145px - 1em );
 		margin-top: .25em;
 		padding-left: 0;
 		position: absolute;
@@ -62,7 +62,7 @@ body {
 }
 
 .alt:before {
-	content: 'Alternate Explanation';
+	content: 'Alternate Intervention';
 }
 .client:before {
 	content: 'Client';
@@ -71,14 +71,6 @@ body {
 	content: 'Counselor';
 }
 
-.analysis {
-	margin-left: 100px;
-
-	&:before {
-		content: 'Analysis';
-		margin-left: -100px;
-		font-size: 1.5em;
-		font-weight: 600;
-		position: absolute;
-	}
+.analysis:before {
+	content: 'Final Analysis';
 }
