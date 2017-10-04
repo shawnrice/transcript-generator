@@ -67,10 +67,8 @@ const formatContent = function(content) {
     marked(content.replace(/-{3,}/gi, ''))
       // replace the opening tags with the matched classnames
       .replace(opening, (match, _, tag) => {
-        // index[tag]++;
-        console.log(index);
-        console.log(match, _, tag);
-        return `${ 'counselor' === tag ? '<h3 style="text-align:center">[' + ++index[tag] + ']</h2>' : '' }<div class="${ tag }">\n<p>`;
+        // put in the name but also put in an h3 at the top of each block
+        return `${ 'counselor' === tag ? '<h3 style="text-align:center">[' + ++index[tag] + ']</h3>' : '' }<div class="${ tag }">\n<p>`;
       })
       // convert the closing tags
       .replace(closing, '</p>\n</div>')
