@@ -240,6 +240,9 @@ function reverseSort(entries) {
 renderSass().then(css => {
   fs.readdirSync('content').forEach(function(name) {
     if (fs.statSync(path.join('content', name)).isFile) {
+      if ( '.md' !== path.extname( path.join( 'content', name ) ) ) {
+        return;
+      }
       const content = fs.readFileSync(path.join('content', name), 'utf-8');
       processFile(content, name.replace('.md', ''), css);
     }
