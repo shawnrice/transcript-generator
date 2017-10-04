@@ -9,7 +9,7 @@ module.exports = function( context, config ) {
 <head>
 	<meta charset="UTF-8">
 	<title>${context.title}</title>
-	<link rel="stylesheet" href="styles.css">
+  <style>${context.css}</style>
 </head>
 <body>
 	`.trim();

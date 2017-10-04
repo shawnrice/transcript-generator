@@ -1,80 +1,134 @@
 body {
-	padding: 0;
-	font-size: '11pt';
-	width: 95%;
-	margin: 4em auto;
-	font: 15px / 1.5 Calibri, Arial, sans-serif;
-}
-
-.header {
-
+  font: 15px / 1.5 Calibri, Arial, sans-serif;
+  font-size: '11pt';
+  margin: 4em auto;
+  padding: 0;
+  width: 95%;
 }
 
 @media print {
-	body {
-		font: 12px / 1.5 Calibri, Arial, sans-serif;
-	}
+  body {
+    font: 12px / 1.5 Calibri, Arial, sans-serif;
+  }
 }
 
 .counselor-name {
-	text-align: right;
+  text-align: right;
 }
 
 .client-name {
-	display: inline;
+  display: inline;
 }
 
 .date {
-	display: inline;
+  display: inline;
 }
 
 .session-header-title {
-	text-align: center;
-	font: 600 1.2em / 2  Calibri, Arial, sans-serif;
+  text-align: center;
+  font: 600 1.2em / 2  Calibri, Arial, sans-serif;
 }
 
-.client, .counselor, .alt, .ms, .pa, .ca, .analysis {
-	border-left: 1px solid gray;
-	margin-bottom: 2em;
-	margin-left: 100px;
-	padding-left: 1em;
+.client,
+.counselor,
+.alt,
+.ms,
+.pa,
+.ca,
+.overview,
+.fh,
+.ss,
+.mh,
+.ph,
+.ew,
+.pp,
+.tp,
+.t,
+.ct,
+.analysis {
+  border-left: 1px solid gray;
+  margin-bottom: 2em;
+  margin-left: 100px;
+  padding-left: 1em;
 
-	&:before {
-		font-size: .75em;
-		font-variant: small-caps;
-		font-weight: 600;
-		margin-left: calc( -100px );
-		margin-top: .25em;
-		padding-left: 0;
-		position: absolute;
-		text-transform: uppercase;
-		width: 90px;
-		word-wrap: normal;
-	}
-}
-
-.ms:before {
-	content: 'Microskill';
-}
-
-.ca:before {
-	content: 'Counselor Analysis';
-}
-
-.pa:before {
-	content: 'Client Analysis';
-}
-
-.alt:before {
-	content: 'Alternative Intervention';
-}
-.client:before {
-	content: 'Client';
-}
-.counselor:before {
-	content: 'Counselor';
+  &:before {
+    font-size: .75em;
+    font-variant: small-caps;
+    font-weight: 600;
+    margin-left: calc( -100px );
+    margin-top: .25em;
+    padding-left: 0;
+    position: absolute;
+    text-transform: uppercase;
+    width: 82px;
+    word-wrap: normal;
+  }
 }
 
-.analysis:before {
-	content: 'Final Analysis';
+.overview::before {
+  content: 'Overview';
+}
+
+.fh::before {
+  content: 'Family History';
+}
+
+.ss::before {
+  content: 'Social Support';
+}
+
+.mh::before {
+  content: 'Medical History';
+}
+
+.ph::before {
+  content: 'Psychiatric History';
+}
+
+.ew::before {
+  content: 'Education / Work History';
+}
+
+.pp::before {
+  content: 'Presenting Problem';
+}
+
+.tp::before {
+  content: 'Treatment Plan';
+}
+
+.t::before {
+  content: 'Transference';
+}
+
+.ct::before {
+  content: 'Counter Transference';
+}
+
+.ms::before {
+  content: 'Microskill';
+}
+
+.ca::before {
+  content: 'Counselor Analysis';
+}
+
+.pa::before {
+  content: 'Client Analysis';
+}
+
+.alt::before {
+  content: 'Alternative';
+}
+
+.client::before {
+  content: 'Client';
+}
+
+.counselor::before {
+  content: 'Counselor';
+}
+
+.analysis::before {
+  content: 'Final Analysis';
 }
